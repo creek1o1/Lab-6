@@ -8,9 +8,6 @@ unsigned long currentMillis2;
 const unsigned long period = 1000; // 60 seconds in ms
 const unsigned long period2 = 2000; // 60 seconds in ms
 
-bool timerRunning = false;
-bool timerRunning2 = false;
-
 bool LED1State = false;
 bool LED2State = false;
 
@@ -36,7 +33,6 @@ void setup() {
   // put your setup code here, to run once:
   pinMode(LED1, OUTPUT);
   pinMode(LED2, OUTPUT);
-  timerRunning = true;
 }
 
 void loop() {
